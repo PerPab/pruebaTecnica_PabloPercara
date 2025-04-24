@@ -51,7 +51,7 @@ BEGIN
 
     IF @IVA IS NULL 
 	BEGIN
-        SET @v_error = 'No se pudo recuperar en valor de ' + @imp_nombre + ' desde la tabla ParametrosGenerales' ;
+        SET @v_error = 'No se pudo recuperar el valor de ' + @imp_nombre + ' desde la tabla ParametrosGenerales.' ;
             THROW 50003, @v_error, 1;
 		RETURN;
 	END
