@@ -32,7 +32,7 @@ BEGIN
 
 	IF @p_fecha IS NULL
     BEGIN
-        SET @v_error = 'El parametro p_fecha no puede ser nulo.';
+        SET @v_error = 'El parámetro p_fecha no puede ser nulo.';
             THROW 50001, @v_error, 1;
 		RETURN;
     END
