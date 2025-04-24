@@ -17,8 +17,8 @@ auto
 --DROP PROCEDURE SP_LISTADO_CAMP;
 
 CREATE PROCEDURE SP_LISTADO_CAMP
-    @p_fechaCamp DATE			= NULL,
-    @p_modeloCod VARCHAR(10)		= NULL
+    @p_fechaCamp DATE		= NULL,
+    @p_modeloCod VARCHAR(10)	= NULL
 AS
 BEGIN
 
@@ -28,7 +28,7 @@ BEGIN
 
 	IF @p_fechaCamp IS NULL
     BEGIN
-          SET @v_error = 'El parametro p_fechaCamp no puede ser nulo.';
+          SET @v_error = 'El parámetro p_fechaCamp no puede ser nulo.';
           THROW 50001, @v_error, 1;
 		RETURN;
     END
@@ -50,7 +50,7 @@ BEGIN
           AND (@p_modeloCod IS NULL OR a.modeloCod = @p_modeloCod)
     )
     BEGIN
-        SET @v_error = 'No se encontraron resultados con los parametros ingresados';
+        SET @v_error = 'No se encontraron resultados con los parámetros ingresados';
         THROW 50003, @v_error, 1;
         RETURN;
     END
