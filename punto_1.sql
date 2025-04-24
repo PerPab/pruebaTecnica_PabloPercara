@@ -18,7 +18,7 @@ auto
 
 CREATE PROCEDURE SP_LISTADO_CAMP
     @p_fechaCamp DATE			= NULL,
-    @p_modeloCod VARCHAR(10)	= NULL
+    @p_modeloCod VARCHAR(10)		= NULL
 AS
 BEGIN
 
