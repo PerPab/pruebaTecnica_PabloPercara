@@ -39,7 +39,7 @@ BEGIN
 
 	IF @p_fecha > @v_fechaHoy
     BEGIN
-        SET @v_error = 'La fecha ingresada debe ser menor a la de hoy.';
+        SET @v_error = 'La fecha ingresada debe ser menor a la fecha de hoy.';
             THROW 50002, @v_error, 1;
 		RETURN;
     END
