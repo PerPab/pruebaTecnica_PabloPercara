@@ -16,7 +16,7 @@ SET autos.precio = autos.precio * (
      + '.' + RIGHT(impuesto.linea, 2) AS DECIMAL(5,2) ) ,1)     -- valor decimal 
      / 100) 
     )
-OUTPUT inserted.modeloCod AS Modelo, inserted.precio AS Precio 
+OUTPUT inserted.modeloCod AS Modelo, inserted.precio AS Precio  -- registros afectados
 FROM Autos autos
 JOIN ImpuestoSolidario impuesto ON autos.modeloCod = LEFT(impuesto.linea, 10);  -- codigo del auto
 
