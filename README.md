@@ -14,7 +14,7 @@ aplicado de la campaña asociada, si lo hubiere).
 auto.
 
 
-3. Crear un Stored Procedure que tenga como parámetro de entrada una fecha y liste los
+2. Crear un Stored Procedure que tenga como parámetro de entrada una fecha y liste los
 préstamos vigentes (no cancelados) junto con su correspondiente valor de cancelación para
 esa fecha.
 El listado debe respetar el siguiente formato:
