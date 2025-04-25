@@ -24,7 +24,7 @@ AS
 BEGIN
 
     DECLARE @v_error VARCHAR(500);
-	DECLARE @IVA DECIMAL(5,2)
+    DECLARE @IVA DECIMAL(5,2);
     DECLARE @imp_nombre VARCHAR(50);
     DECLARE @v_fechaHoy DATE;
 
